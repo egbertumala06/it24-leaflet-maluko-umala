@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Barangay Maluko Community Map</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- LEAFLET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Barangay Maluko Community Map</h1>
+      <p>Manolo Fortich, Bukidnon</p>
+    </header>
+
+    <main>
+      <h2>Explore Our Community</h2>
+
+      <p class="description">
+        Search and explore important places and landmarks around Barangay
+        Maluko.
+      </p>
+
+      <!-- SEARCH BAR -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search any place..." />
+
+        <button onclick="searchPlace()">Search</button>
+      </div>
+
+      <!-- SEARCH RESULTS -->
+      <div id="searchResults"></div>
+
+      <!-- MAP -->
+      <div id="map"></div>
+
+      <!-- COORDINATES -->
+      <div class="coordinates">
+        <h3>Selected Coordinates</h3>
+
+        <p id="coordinates">Click anywhere on the map to get coordinates.</p>
+      </div>
+
+      <!-- MAP LEGEND -->
+      <div class="legend">
+        <h3>Map Legend</h3>
+
+        <ul>
+          <li>📍 Barangay Hall</li>
+          <li>📍 Elementary School</li>
+          <li>📍 National High School</li>
+          <li>🔵 500-Meter Radius</li>
+          <li>🔎 Search Location</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Barangay Maluko Community Mapping Project</p>
+      <p>Manolo Fortich, Bukidnon</p>
+    </footer>
+
+    <!-- LEAFLET JAVASCRIPT -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
